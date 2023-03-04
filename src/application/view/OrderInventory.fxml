@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="500.0" maxWidth="800.0" minHeight="500.0" minWidth="800.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.InventoryOrderController">
+	<children>
+		<ImageView fx:id="pandaButton" fitHeight="42.0" fitWidth="55.0" layoutX="13.0" layoutY="14.0" onMouseClicked="#PandaButton" pickOnBounds="true" preserveRatio="true">
+     		<image>
+               <Image url="@../../../data/PandaLogo.png" />
+            </image>
+        </ImageView>
+		<Button fx:id="confirm" onMouseClicked="#send_order" text="Order"></Button>
+		<ComboBox fx:id="orderBox"></ComboBox>
+		<TextField fx:id="quantity"></TextField>
+		<VBox fx:id="page" prefHeight="500.0" prefWidth="800.0">
+		</VBox>
+	</children>	
+	<Button onAction="#handle" layoutX="70" layoutY="20" text="Go Back"></Button>
+</AnchorPane>

@@ -1,0 +1,37 @@
+### Create table menu_item with auto-increment menu_item_id
+
+CREATE TABLE menu_item(
+   menu_item_id  		SERIAL PRIMARY KEY,
+   product_name         VARCHAR NOT NULL,
+   sale_price           REAL,
+   unit_purchase_price  REAL,
+   category 		INT
+);
+
+CREATE TABLE inventory_order(
+	inventory_order_id	SERIAL PRIMARY KEY,
+	inventory_quantity	INT,
+	time_stamp			DATE,
+	inventory_order_price	FLOAT
+);
+
+CREATE TABLE meal_items_BRIDGE(
+	meal_id		INT,
+	menu_item_id	INT
+);
+
+ALTER TABLE meal_items_BRIDGE
+    ADD CONSTRAINT fk_ FOREIGN KEY (side_id) REFERENCES menu_item(menu_item_id);
+	
+
+SELECT
+*
+FROM
+menu_item OFFSET floor(random() * (
+SELECT
+COUNT(*)
+FROM menu_item))
+LIMIT 1;
+
+
+

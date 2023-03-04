@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="500.0" maxWidth="800.0" minHeight="500.0" minWidth="800.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.EditInventoryItemController">
+	<children>
+		<ImageView fx:id="pandaButton" fitHeight="75.0" fitWidth="71.0" layoutX="3.0" onMouseClicked="#signout" pickOnBounds="true" preserveRatio="true">
+	    	<image>
+	        	<Image url="@../../../data/PandaLogo.png" />
+	    	</image>
+	 	</ImageView>
+		<Button fx:id="backButton" layoutX="81.0" layoutY="20.0" onAction="#handle" prefHeight="42.0" prefWidth="71.0" style="-fx-background-radius: 7;" text="Go Back">
+         <font>
+            <Font name="Apple SD Gothic Neo SemiBold" size="14.0" />
+         </font></Button>
+      <Label layoutX="227.0" layoutY="100.0" text="Edit Inventory Item" textFill="#f51c1c">
+         <font>
+            <Font name="Apple LiGothic Medium" size="48.0" />
+         </font></Label>
+      <Button fx:id="signoutButton" layoutX="166.0" layoutY="20.0" onMouseClicked="#signout" prefHeight="42.0" prefWidth="71.0" style="-fx-background-radius: 7;" text="Signout">
+         <font>
+            <Font name="Apple SD Gothic Neo SemiBold" size="14.0" />
+         </font></Button>
+      <Button layoutX="74.0" layoutY="201.0" mnemonicParsing="false" onAction="#addInventoryItem" prefHeight="75.0" prefWidth="208.0" style="-fx-background-radius: 25;" text="Add Inventory Item">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="521.0" layoutY="201.0" mnemonicParsing="false" onAction="#deleteInventoryItem" prefHeight="72.0" prefWidth="208.0" style="-fx-background-radius: 25;" text="Delete Inventory Item" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+	</children>
+</AnchorPane>

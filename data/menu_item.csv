@@ -1,0 +1,21 @@
+menu_item_id,product_name,sale_price,category
+1,White Rice,4.40,0
+2,Brown Rice,4.40,0
+3,Fried Rice,4.40,0
+4,Chow Mein,4.40,0
+5,Mixed Vegetables,4.40,0
+6,Honey Sesame Chicken,4.90,1
+7,Orange Chicken,4.90,1
+8,Black Pepper Angus ,4.90,1
+9,String Bean Chicken Breast,4.90,1
+10,SweetFire Chicken Breast,4.90,1
+11,Kung Pao Chicken,4.90,1
+12,Mushroom Chicken,4.90,1
+13,Black Pepper Chicken,4.90,1
+14,Grilled Teriyaki Chicken,4.90,1
+15,Brococoli Beef,4.90,1
+16,Beijing Beef,4.90,1
+17,Honey Walnut Shrimp,4.90,1
+18,Eggplant Tofu,4.90,1
+19,Fountain Drink,2.30,2
+20,Bottled Water,2.00,2
